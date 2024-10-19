@@ -18,7 +18,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=Asia/Ho_Chi_Minh
 
 RUN apt-get update && apt-get install -y --no-install-recommends locales git wget apt-utils  && \
-    apt -y --no-install-recommends install make cm  ake gcc g++ build-essential && \  
+    apt -y --no-install-recommends install make cmake gcc g++ build-essential && \  
     apt -y --no-install-recommends install libsndfile1-dev ffmpeg && \  
     pip3 install --upgrade pip && \  
     locale-gen en_US.UTF-8  && \  
